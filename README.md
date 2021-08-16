@@ -5,11 +5,11 @@ Wirehole like container setup with inclusion of wireguard control gui by WeeJeWe
   ## Installation
   ## Run these commands on clean server to set up
   
-  ##1.
+  1.
   ````
   $sudo nano setup.sh
   `````
-  ##2. copy script below into setup.sh, save and exit.
+  2. copy script below into setup.sh, save and exit.
   ````bash
   
 #!/bin/bash
@@ -66,5 +66,11 @@ git clone https://github.com/NOXCIS/Docker-Wordpress.git
     docker-compose up &&
     cd ..
 
-```
-  
+````
+ 
+3.
+````
+$ sudo chmod +x setup.sh
+$ sudo ./setup.sh
+`````
+4. Press Ctrl + C after every container install to continue the script.
