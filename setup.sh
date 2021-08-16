@@ -31,8 +31,8 @@ docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 
 # Pihole
-git clone https://github.com/NOXCIS/Docker-Pihole.git
-    cd Docker-Pihole &&
+git clone https://github.com/NOXCIS/wirehole.git
+    cd wirehole &&
     docker-compose up
 
 # Wireguard Easy  -LOCATION -> host-ip:51821 -LOGIN changeme * can be change in portaier env varables.
