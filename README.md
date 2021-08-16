@@ -8,16 +8,16 @@ Wirehole-like container stack setup with inclusion of ...
 
 
 + Portainer-CE                - serves as overall gui control panel for enviorment variables once setup is complete. 
-  |Runs on   "your.server.ip":9000 . 
+  -Runs on   "your.server.ip":9000 . 
   
 + wg-easy by WeeJeWel         - to control user and server configs, with automatic update of configs                  
-  |Runs on   "your.server.ip":51821 
+  -Runs on   "your.server.ip":51821 
   
 + nginx-proxy-manager by jc21 - to limit open ports on server to a minimum via reverse proxy over 80 & 443 with ssl certs by Lets Encrypt.                     
-  |Runs on   "your.server.ip":81 
+  -Runs on   "your.server.ip":81 
                                 
 + wordpress by wordpress      - addilional site hosting or whatever.                                                 
-  |Runs on   "your.server.ip":2095   (for Cloudflare Proxy Support)
+  -Runs on   "your.server.ip":2095   (for Cloudflare Proxy Support)
 
 # NOTES
 All paswords are sored as enviorment varibales in the docker-compose file. By default they are set to changeme. See setup.sh comments for more.
@@ -112,6 +112,7 @@ $ sudo ./setup.sh
 `````
 4. Press Ctrl + C after every container install to continue the script. If Needed.
 ````
+Edit: This is no longer nessary. 
 #This is nessary for the time being. As i dont know how to force continue the script without stopping the containers after creation.
 Also i want the script to negate the use of kil, so i cant use PID Ids. 
 HELP NEEDED
