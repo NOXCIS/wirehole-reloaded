@@ -9,4 +9,4 @@ Run these commands on clean server to set up
   $ sudo cd wirehole-reloaded
   $ sudo chmod +x setup.sh
   $ sudo ./setup.sh
-  ````bash
+  
