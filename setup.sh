@@ -44,7 +44,7 @@ mkdir ~/.wg-easy
 # Nginx_Proxy_Manager -LOGIN admin@example.com: changeme
 git clone https://github.com/NOXCIS/Docker-nginx-proxy-manager.git
     cd Docker-nginx-proxy-manager &&
-    docker-compose up
+    docker-compose up &&
 
 # Wordpress
 git clone https://github.com/NOXCIS/Docker-Wordpress.git
