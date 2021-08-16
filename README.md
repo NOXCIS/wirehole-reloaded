@@ -51,6 +51,36 @@ Give a ⭐ if this project helped you!
   
 #!/bin/bash
 
+echo " __      __.__               .__           .__           ";
+echo "/  \    /  \__|______   ____ |  |__   ____ |  |   ____   ";
+echo "\   \/\/   /  \_  __ \_/ __ \|  |  \ /  _ \|  | _/ __ \  ";
+echo " \        /|  ||  | \/\  ___/|   Y  (  <_> )  |_\  ___/  ";
+echo "  \__/\  / |__||__|    \___  >___|  /\____/|____/\___  > ";
+echo "       \/                  \/     \/                 \/  ";
+echo "__________       .__                    .___         .___";
+echo "\______   \ ____ |  |   _________     __| _/____   __| _/";
+echo " |       _// __ \|  |  /  _ \__  \   / __ |/ __ \ / __ | ";
+echo " |    |   \  ___/|  |_(  <_> ) __ \_/ /_/ \  ___// /_/ | ";
+echo " |____|_  /\___  >____/\____(____  /\____ |\___  >____ | ";
+echo "        \/     \/                \/      \/    \/     \/ ";
+echo "___.            _______                      .__         ";
+echo "\_ |__ ___.__.  \      \   _______  ___ ____ |__| ______ ";
+echo " | __ <   |  |  /   |   \ /  _ \  \/  // ___\|  |/  ___/ ";
+echo " | \_\ \___  | /    |    (  <_> >    <\  \___|  |\___ \  ";
+echo " |___  / ____| \____|__  /\____/__/\_ \\___  >__/____  > ";
+echo "     \/\/              \/            \/    \/        \/  ";
+echo "               Script wirtten by Shamar Lee              ";         
+echo "                                                         ";
+echo "                        Thanks to                        ";
+echo "                                                         ";
+echo "                   IAmStoxe on Github                    ";
+echo "                     jc21 on Github                      ";
+echo "                   WeeJeWel on Github                    ";
+echo "                                                         ";
+
+sleep 5s
+
+
 # Prereqs and docker
 sudo apt-get update &&
     sudo apt-get install -yqq \
@@ -102,7 +132,6 @@ git clone https://github.com/NOXCIS/Docker-Wordpress.git
     cd Docker-Wordpress &&
     docker-compose up --detach &&
     cd ..
-
 ````
  
 3. Run these commands
