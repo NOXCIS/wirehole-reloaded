@@ -7,11 +7,11 @@ WireHole is a combination of WireGuard, PiHole, and Unbound in a docker-compose 
 Wirehole-like container stack setup with inclusion of ...
 
 
-+ Portainer-CE                - serves as overall gui control panel for enviorment variables once setup is complete.  Runs on   "your.server.ip":9000 . 
-+ wg-easy by WeeJeWel         - to control user and server configs, with automatic update of configs                  Runs on   "your.server.ip":51821 . 
-+ nginx-proxy-manager by jc21 - to limit open ports on server to a minimum via reverse proxy                          Runs on   "your.server.ip":81 . 
++ Portainer-CE                - serves as overall gui control panel for enviorment variables once setup is complete.  |Runs on   "your.server.ip":9000 . 
++ wg-easy by WeeJeWel         - to control user and server configs, with automatic update of configs                  |Runs on   "your.server.ip":51821 . 
++ nginx-proxy-manager by jc21 - to limit open ports on server to a minimum via reverse proxy                          |Runs on   "your.server.ip":81 . 
                                 over 80 & 443 with ssl certs by Lets Encrypt.
-+ wordpress by wordpress      - addilional site hosting or whatever.                                                  Runs on   "your.server.ip":2095 . 
++ wordpress by wordpress      - addilional site hosting or whatever.                                                  |Runs on   "your.server.ip":2095 . 
                                 (for Cloudflare Proxy Support)
 
 # NOTES
