@@ -37,7 +37,7 @@ git clone https://github.com/NOXCIS/wirehole.git
 
 # Wireguard Easy  -LOCATION -> host-ip:51821 -LOGIN changeme * can be change in portaier env varables.
 mkdir ~/.wg-easy
-    cd ~/.wg-easy
+    cd ~/.wg-easy &&
     wget https://raw.githubusercontent.com/WeeJeWel/wg-easy/master/docker-compose.yml
     docker-compose up --detach
 
