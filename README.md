@@ -1,5 +1,39 @@
+## What is this?
+Wirehole Reloaded is an iprovement on Wirehole by IAmStoxe.
+
+WireHole is a combination of WireGuard, PiHole, and Unbound in a docker-compose project with the intent of enabling users to quickly and easily create and deploy a personally managed full or split-tunnel WireGuard VPN with ad blocking capabilities (via Pihole), and DNS caching with additional privacy options (via Unbound).
+
 # wirehole-reloaded
-Wirehole like container setup with inclusion of wireguard control gui by WeeJeWel & Wordpress
+Wirehole-like container stack setup with inclusion of ...
+
+
++ Portainer-CE                - serves as overall gui control panel for enviorment variables once setup is complete.  Runs on   "your.server.ip":9000 . 
++ wg-easy by WeeJeWel         - to control user and server configs, with automatic update of configs                  Runs on   "your.server.ip":51821 . 
++ nginx-proxy-manager by jc21 - to limit open ports on server to a minimum via reverse proxy                          Runs on   "your.server.ip":81 . 
+                                over 80 & 443 with ssl certs by Lets Encrypt.
++ wordpress by wordpress      - addilional site hosting or whatever.                                                  Runs on   "your.server.ip":2095 . 
+                                (for Cloudflare Proxy Support)
+
+# NOTES
+All paswords are sored as enviorment varibales in the docker-compose file. By default they are set to changeme. See setup.sh comments for more.
+
+## Author of Wirehole Reloaded
+
+👤 **Shamar Lee**
+
+* Github: [@IAmStoxe](https://github.com/IAmStoxe)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/NOXCIS/wirehole-reloaded/issues). 
+
+## Show your support
+
+Give a ⭐ if this project helped you!
+
+
+<a href="https://www.paypal.com/donate?business=986V5GH5R5T4G&no_recurring=0&item_name=Buy+me+a+Coffee&currency_code=USD" target="_blank"><img src="https://i.imgur.com/6JvV0aR.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 
   
   ## Installation
