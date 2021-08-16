@@ -68,7 +68,7 @@ git clone https://github.com/NOXCIS/Docker-Wordpress.git
 
 ````
  
-3.
+3. Run these commands
 ````
 $ sudo chmod +x setup.sh
 $ sudo ./setup.sh
