@@ -27,6 +27,8 @@ echo "                     jc21 on Github                      ";
 echo "                   WeeJeWel on Github                    ";
 echo "                                                         ";
 
+sleep 10s
+
 
 # Prereqs and docker
 sudo apt-get update &&
