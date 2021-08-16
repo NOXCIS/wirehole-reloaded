@@ -79,3 +79,4 @@ $ sudo ./setup.sh
 Also i want the script to negate the use of kil, so i cant use PID Ids. 
 HELP NEEDED
 ````
+<a href="https://www.paypal.com/donate?business=986V5GH5R5T4G&no_recurring=0&item_name=Buy+me+a+Coffee&currency_code=USD" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
