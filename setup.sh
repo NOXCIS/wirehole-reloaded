@@ -33,13 +33,13 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 # Pihole
 git clone https://github.com/NOXCIS/wirehole.git
     cd wirehole &&
-    docker-compose up
+    docker-compose up &&
 
 # Wireguard Easy  -LOCATION -> host-ip:51821 -LOGIN changeme * can be change in portaier env varables.
 mkdir ~/.wg-easy
     cd ~/.wg-easy &&
     wget https://raw.githubusercontent.com/WeeJeWel/wg-easy/master/docker-compose.yml
-    docker-compose up --detach
+    docker-compose up --detach &&
 
 # Nginx_Proxy_Manager -LOGIN admin@example.com: changeme
 git clone https://github.com/NOXCIS/Docker-nginx-proxy-manager.git
@@ -49,4 +49,5 @@ git clone https://github.com/NOXCIS/Docker-nginx-proxy-manager.git
 # Wordpress
 git clone https://github.com/NOXCIS/Docker-Wordpress.git
     cd Docker-Wordpress &&
-    docker-compose up
+    docker-compose up &&
+    cd ..
