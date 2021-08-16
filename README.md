@@ -7,7 +7,7 @@ Wirehole like container setup with inclusion of wireguard control gui by WeeJeWe
   
   1.
   ````
-  $sudo nano setup.sh
+  $ sudo nano setup.sh
   `````
   2. copy script below into setup.sh, save and exit.
   ````bash
