@@ -27,7 +27,7 @@ echo "                     jc21 on Github                      ";
 echo "                   WeeJeWel on Github                    ";
 echo "                                                         ";
 
-sleep 10s
+sleep 5s
 
 
 # Prereqs and docker
