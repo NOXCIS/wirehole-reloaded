@@ -21,8 +21,6 @@ All paswords are sored as enviorment varibales in the docker-compose file. By de
 
 👤 **Shamar Lee**
 
-* Github: [@IAmStoxe](https://github.com/IAmStoxe)
-
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/NOXCIS/wirehole-reloaded/issues). 
