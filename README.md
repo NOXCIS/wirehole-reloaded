@@ -74,3 +74,6 @@ $ sudo chmod +x setup.sh
 $ sudo ./setup.sh
 `````
 4. Press Ctrl + C after every container install to continue the script.
+````
+#This is nessary for the time being as i dont know how to force continue the script without stopping the containers after creation. Also i want the script to negate the use of kill. Help Needed
+````
