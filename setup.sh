@@ -66,8 +66,7 @@ git clone https://github.com/NOXCIS/wirehole.git
         echo "#######################################################################"
         echo "|SETUP - WIREHOLE| MAKE WANTED CHANGES SAVE AND EXIT"
         echo "#######################################################################"
-        sleep 2s
-        nano docker-compose.yml
+        sleep 3s        nano docker-compose.yml
     docker-compose up --detach &&
 
 # Wireguard Easy  -LOCATION -> host-ip:51821 -LOGIN changeme * can be change in portaier env varables.
@@ -77,8 +76,7 @@ mkdir ~/.wg-easy
         echo "#######################################################################"
         echo "|SETUP - WIREGUARD_GUI| MAKE NECESSARY CHANGES SAVE AND EXIT"
         echo "#######################################################################"
-        sleep 2s
-        nano docker-compose.yml
+        sleep 3s        nano docker-compose.yml
     docker-compose up --detach &&
 
 # Nginx_Proxy_Manager -LOGIN admin@example.com: changeme
@@ -87,8 +85,7 @@ mkdir ~/.wg-easy
         echo "#######################################################################"
         echo "|SETUP - NGINX_PROXMAN| MAKE NECESSARY CHANGES SAVE AND EXIT"
         echo "#######################################################################"
-        sleep 2s
-        nano docker-compose.yml
+        sleep 3s        nano docker-compose.yml
     docker-compose up --detach &&
 
 # Wordpress
@@ -97,8 +94,7 @@ mkdir ~/.wg-easy
         echo "#######################################################################"
         echo "|SETUP - WORDPRESS| MAKE NECESSARY CHANGES SAVE AND EXIT"
         echo "#######################################################################"
-        sleep 2s
-        nano docker-compose.yml
+        sleep 3s        nano docker-compose.yml
     docker-compose up --detach &&
         cd ..
 
@@ -106,7 +102,7 @@ mkdir ~/.wg-easy
         echo "#######################################################################"
         echo "INSTALL OUTLINE SERVER"
         echo "#######################################################################"
-        sleep 2s
+        sleep 3s
     sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
 
 
@@ -126,6 +122,6 @@ mkdir ~/.wg-easy
         echo " vm.swappiness=10 "
         echo " vm.vfs_cache_pressure=50 "
         echo "########################################################################"
-    sleep 8s
+    sleep 10s
     sudo nano /etc/sysctl.conf
     
