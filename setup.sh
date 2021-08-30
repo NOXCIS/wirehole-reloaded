@@ -81,3 +81,24 @@ git clone https://github.com/NOXCIS/Docker-Wordpress.git
     cd Docker-Wordpress &&
     docker-compose up --detach &&
     cd ..
+    
+#Outline Server 
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
+    
+    
+    
+#Swapfile for Low Mem Svrs
+    fallocate -l 2G /swapfile
+    chmod 600 /swapfile
+    mkswap /swapfile
+    swapon /swapfile
+    cp /etc/fstab /etc/fstab.bak
+    echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+    sysctl vm.swappiness=10
+    echo " copy lines below to systemctl which will open then save and exit"
+    echo " vm.swappiness=10 "
+    echo " vm.vfs_cache_pressure=50 "
+    sleep 8s
+    sudo nano /etc/sysctl.conf
+    sysctl vm.vfs_cache_pressure=50
+    
