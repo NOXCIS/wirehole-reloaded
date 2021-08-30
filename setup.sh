@@ -18,7 +18,7 @@ echo " | __ <   |  |  /   |   \ /  _ \  \/  // ___\|  |/  ___/ ";
 echo " | \_\ \___  | /    |    (  <_> >    <\  \___|  |\___ \  ";
 echo " |___  / ____| \____|__  /\____/__/\_ \\___  >__/____  > ";
 echo "     \/\/              \/            \/    \/        \/  ";
-echo "               Script wirtten by Shamar Lee              ";         
+echo "               Script wirtten by Shamar Lee              ";
 echo "                                                         ";
 echo "                        Thanks to                        ";
 echo "                                                         ";
@@ -63,30 +63,44 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 # Pihole
 git clone https://github.com/NOXCIS/wirehole.git
     cd wirehole &&
+    echo "make wanted changes, save and exit"
+    sleep 2s
+    nano docker-compose.yml
     docker-compose up --detach &&
 
 # Wireguard Easy  -LOCATION -> host-ip:51821 -LOGIN changeme * can be change in portaier env varables.
 mkdir ~/.wg-easy
     cd ~/.wg-easy &&
     wget https://raw.githubusercontent.com/NOXCIS/wg-easy/master/docker-compose.yml
+    echo "make nessary changes, save and exit"
+    sleep 2s
+    nano docker-compose.yml
     docker-compose up --detach &&
 
 # Nginx_Proxy_Manager -LOGIN admin@example.com: changeme
 git clone https://github.com/NOXCIS/Docker-nginx-proxy-manager.git
     cd Docker-nginx-proxy-manager &&
+    echo "make nessary changes, save and exit"
+    sleep 2s
+    nano docker-compose.yml
     docker-compose up --detach &&
 
 # Wordpress
 git clone https://github.com/NOXCIS/Docker-Wordpress.git
     cd Docker-Wordpress &&
+    echo "make nessary changes, save and exit"
+    sleep 2s
+    nano docker-compose.yml
     docker-compose up --detach &&
     cd ..
-    
-#Outline Server 
+
+#Outline Server
+echo "copy api key"
+sleep 2s
 sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
-    
-    
-    
+
+
+
 #Swapfile for Low Mem Svrs
     fallocate -l 2G /swapfile
     chmod 600 /swapfile
@@ -101,4 +115,3 @@ sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-
     sleep 8s
     sudo nano /etc/sysctl.conf
     sysctl vm.vfs_cache_pressure=50
-    
