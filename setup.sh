@@ -64,7 +64,7 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 git clone https://github.com/NOXCIS/wirehole.git
     cd wirehole &&
         echo "#######################################################################"
-        echo "MAKE WANTED CHANGES SAVE AND EXIT"
+        echo "|SETUP - WIREHOLE| MAKE WANTED CHANGES SAVE AND EXIT"
         echo "#######################################################################"
         sleep 2s
         nano docker-compose.yml
@@ -75,7 +75,7 @@ mkdir ~/.wg-easy
     cd ~/.wg-easy &&
     wget https://raw.githubusercontent.com/NOXCIS/wg-easy/master/docker-compose.yml
         echo "#######################################################################"
-        echo "MAKE NECESSARY CHANGES SAVE AND EXIT"
+        echo "|SETUP - WIREGUARD_GUI| MAKE NECESSARY CHANGES SAVE AND EXIT"
         echo "#######################################################################"
         sleep 2s
         nano docker-compose.yml
@@ -85,7 +85,7 @@ mkdir ~/.wg-easy
     git clone https://github.com/NOXCIS/Docker-nginx-proxy-manager.git
         cd Docker-nginx-proxy-manager &&
         echo "#######################################################################"
-        echo "MAKE NECESSARY CHANGES SAVE AND EXIT"
+        echo "|SETUP - NGINX_PROXMAN| MAKE NECESSARY CHANGES SAVE AND EXIT"
         echo "#######################################################################"
         sleep 2s
         nano docker-compose.yml
@@ -95,7 +95,7 @@ mkdir ~/.wg-easy
     git clone https://github.com/NOXCIS/Docker-Wordpress.git
         cd Docker-Wordpress &&
         echo "#######################################################################"
-        echo "MAKE NECESSARY CHANGES SAVE AND EXIT"
+        echo "|SETUP - WORDPRESS| MAKE NECESSARY CHANGES SAVE AND EXIT"
         echo "#######################################################################"
         sleep 2s
         nano docker-compose.yml
@@ -104,7 +104,7 @@ mkdir ~/.wg-easy
 
 #Outline Server
         echo "#######################################################################"
-        echo "MAKE NECESSARY CHANGES SAVE AND EXIT"
+        echo "INSTALL OUTLINE SERVER"
         echo "#######################################################################"
         sleep 2s
     sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
