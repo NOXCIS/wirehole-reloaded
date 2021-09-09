@@ -98,14 +98,12 @@ mkdir ~/.wg-easy
     docker-compose up --detach &&
         cd ..
 
-#Outline Server
-        echo "#######################################################################"
-        echo "INSTALL OUTLINE SERVER"
-        echo "#######################################################################"
-        sleep 3s
-    sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
+#WatchTower
 
-
+docker run -d \
+    --name watchtower \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower
 
 #Swapfile for Low Mem Svrs
     fallocate -l 2G /swapfile
