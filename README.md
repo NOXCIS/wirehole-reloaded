@@ -15,8 +15,9 @@ Wirehole-like container stack setup with inclusion of ...
   
 + nginx-proxy-manager by jc21 - to limit open ports on server to a minimum via reverse proxy over 80 & 443 with ssl certs by Lets Encrypt.                     
   -Runs on   "your.server.ip":81 
-                                
-+ wordpress by wordpress      - addilional site hosting or whatever.                                                 
+  -For added security, proxy the proxy. If done right only ports needed are 22, 80, 443, Happy Hunting.
+  
++ wordpress by wordpress      -  website hosting or whatever.        - Will replace with DNSCrypt ASP.                                         
   -Runs on   "your.server.ip":2095   (for Cloudflare Proxy Support)
 
 # NOTES
